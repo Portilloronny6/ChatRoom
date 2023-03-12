@@ -5,7 +5,7 @@ from django.views import View
 class IndexView(View):
 
     def get(self, request):
-        return render(request, "chat/index.html", context={})
+        return render(request, "chat/index.html", context={'lobby': 'lobby'})
 
 
 class RoomView(View):
